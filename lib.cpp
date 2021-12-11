@@ -1,13 +1,12 @@
-#include <iostream>
-#include "lib.h"
-using namespace std;
 
-float funzione(const int dimensione, float numeri[dimensione]){
-   numeri[dimensione];
-   float max=num[0];
-   for(int i=0, i<dimensione, i++){
-       if(numeri[1]>max){
-           max=numeri[1];
+#include "lib.h"
+
+float funzione(const float numeri[], int dim){
+   numeri[dim];
+   float max=numeri[0];
+   for(int i=0, i<dim, i++){
+       if(numeri[i]>max){
+           max=numeri[i];
        }
    }
    return max;
