@@ -3,13 +3,15 @@
 using namespace std;
 
 int main() {
-    int dimensione=0;
-    cin >> dimensione;
-    float ins=0;
-    float numeri[dimensione];
-    numeri[dimensione]=ins;
-    float risultato= funzione(dimensione, ins);
-
-    funzione(dimensione,ins);
-    return risultato;
+    int dim;
+    cin >> dim;
+    float numeri[dim];
+    for (int i = 0 ; i < dim ; i++){
+        cin >> numeri[i];   
+    }
+    funzione(numeri , dim);
+    
+    cout << funzione(numeri , dim) << endl;
+    
+    return 0;
 }
